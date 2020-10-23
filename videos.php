@@ -15,11 +15,11 @@ if (!$connect)
 <!doctype html>
 <html>
     <head>
-        <title>PHP, MySQL, and Images</title>
+        <title>PHP, MySQL, and YouTube Videos</title>
     </head>
     <body>
 
-        <h1>PHP, MySQL, and Images</h1>
+        <h1>PHP, MySQL, and YouTube Videos</h1>
 
         <?php
 
