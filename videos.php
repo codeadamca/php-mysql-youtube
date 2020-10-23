@@ -24,9 +24,9 @@ if (!$connect)
         <?php
 
         // Create a query
-        $query = 'SELECT 
-            FROM 
-            ORDER BY ';
+        $query = 'SELECT id,name,youtubeId
+            FROM videos
+            ORDER BY name';
 
         // Execute the query
         $result = mysqli_query($connect, $query);

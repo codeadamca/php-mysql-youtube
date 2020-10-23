@@ -15,17 +15,17 @@ if (!$connect)
 <!doctype html>
 <html>
     <head>
-        <title>PHP, MySQL, and Images</title>
+        <title>PHP, MySQL, and YouTube Videos</title>
     </head>
     <body>
 
-        <h1>PHP, MySQL, and Images</h1>
+        <h1>PHP, MySQL, and YouTube Videos</h1>
 
         <?php
 
         // Create a query
-        $query = 'SELECT id,name,filename
-            FROM images
+        $query = 'SELECT id,name,youtubeId
+            FROM videos
             ORDER BY name';
 
         // Execute the query
@@ -50,7 +50,15 @@ if (!$connect)
 
             echo '<h2>'.$record['name'].'</h2>';
 
-            echo '<img src="'.$record['filename'].'">';
+            $url = 'https://www.youtube.com/watch?v='.$record['youtubeId'];
+
+            echo '<a href="'.$url.'">'.$url.'</a>';
+
+            echo '<br><br>';
+
+            echo '<iframe width="560" height="315" src="https://www.youtube.com/embed/'.$record['youtubeId'].'?modestbranding=1" 
+                rameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>';
 
         }
 
