@@ -1,4 +1,4 @@
-# php-mysql-youtube
+# Using PHP to Display YouTube Videos from a MySQL Database
 
 A basic sample of integrating YouTube vdeos into a MySQL database.
 
