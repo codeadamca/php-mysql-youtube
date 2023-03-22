@@ -1,7 +1,7 @@
 <?php
 
 // Connect to the MySQL database
-$connect = mysqli_connect('localhost', 'root', 'root', 'sandbox');
+$connect = mysqli_connect('<DB_HOST>', '<DB_USER>', '<DB_PASSWORD>', '<DB_DATABASE>');
 
 // If the connection did not work, display an error message
 if (!$connect) 
